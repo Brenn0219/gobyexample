@@ -5,16 +5,16 @@ import (
 	"time"
 )
 
-func g(from string) {
+func h(from string) {
 	for i := range 3 {
 		fmt.Println(from, ":", i)
 	}
 }
 
 func Goroutines() {
-	g("direct")
+	h("direct")
 
-	go g("goroutine")
+	go h("goroutine")
 
 	go func(msg string) {
 		fmt.Println(msg)

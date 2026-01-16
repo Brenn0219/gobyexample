@@ -14,7 +14,7 @@ func (e *argError) Error() string {
 	return fmt.Sprintf("%d - %s\n", e.arg, e.message)
 }
 
-func f(arg int) (int, error) {
+func g(arg int) (int, error) {
 	if arg == 42 {
 		return -1, &argError{arg, "can't work with it"}
 	}
