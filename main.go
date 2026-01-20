@@ -3,5 +3,5 @@ package main
 import "github.com/Brenn0219/gobyexamples/examples"
 
 func main() {
-	examples.Sorting()
+	examples.SortingByFunctions()
 }
