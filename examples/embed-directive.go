@@ -1,26 +1,26 @@
 package examples
 
-import (
-	"embed"
-)
+// import (
+// 	"embed"
+// )
 
-func EmbedDirective() {
+// func EmbedDirective() {
 
-	//go:embed folder/sigle_file.txt
-	var fileString string
+// 	//go:embed folder/sigle_file.txt
+// 	var fileString string
 
-	//go:embed folder/sigle_file.txt
-	var fileByte []byte
+// 	//go:embed folder/sigle_file.txt
+// 	var fileByte []byte
 
-	//go:embed folder/sigle_file.txt
-	//go:embed folder/*.hash
-	var folder embed.FS
+// 	//go:embed folder/sigle_file.txt
+// 	//go:embed folder/*.hash
+// 	var folder embed.FS
 
-	print(fileString)
-	print(string(fileByte))
+// 	print(fileString)
+// 	print(string(fileByte))
 
-	content1, _ := folder.ReadFile("folder/file1.hash")
-	print(string(content1))
-	content2, _ := folder.ReadFile("folder/file2.hash")
-	print(string(content2))
-}
+// 	content1, _ := folder.ReadFile("folder/file1.hash")
+// 	print(string(content1))
+// 	content2, _ := folder.ReadFile("folder/file2.hash")
+// 	print(string(content2))
+// }
